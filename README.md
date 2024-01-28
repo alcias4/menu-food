@@ -1,6 +1,6 @@
 ## Exercise of menu list
 
-# Pratic: 
+# Practice: 
 - JavaScript
 - CSS 
 - HTML
