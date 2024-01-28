@@ -1,0 +1,258 @@
+:root{
+  --borde-color:  linear-gradient(90deg, rgba(81,72,231,1) 0%, rgba(13,13,194,1) 35%, rgba(0,212,255,1) 100%);
+  --witdth: 80%;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Inter Tight', sans-serif;
+}
+
+body {
+  background-color: #090b0e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+header{
+  margin-top: 100px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+header h1{
+  background: var(--borde-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  font-size: 50px;
+  position: relative;
+  margin-top: 10px;
+}
+
+.fast {
+  position: absolute;
+  font-size: 50px;
+  top: -60px;
+  font-weight: 700;
+}
+
+.easy{
+  position: absolute;
+  font-size: 50px;
+  font-weight: 700;
+  bottom: 50px;
+}
+
+
+header p {
+  opacity: 0.7;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+main{
+  width: var(--witdth);
+  margin-top: 40px;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.info {
+  border: none;
+  width: 100%;
+  height: 100%;
+  background-color: #090b0e;
+  border-radius: 10px;
+  padding-left: 20px;
+  font-weight: 600;
+  color: white;
+}
+
+.border{
+  display: flex;
+  align-items: center;
+  content: "hola";
+  background: rgb(81,72,231);
+  background: linear-gradient(90deg, rgba(81,72,231,1) 0%, rgba(13,13,194,1) 35%, rgba(0,212,255,1) 100%);
+  position: relative;
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  position: relative;
+  padding: 2px;
+  box-shadow: 0px 0px 3px rgba(253, 253, 253, 0.322);
+  animation: brillo 2s ease-in-out reverse infinite;
+}
+
+@keyframes brillo {
+  to{
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.733);
+  }
+}
+
+#check {
+  display: none;
+}
+
+.select {
+  list-style: none;
+  width: 298px;
+  height: auto;
+  position: absolute;
+  padding: 2px;
+  bottom: -202px;
+  display: none;
+  border-radius: 10px;
+  background: rgb(81,72,231);
+  background: linear-gradient(90deg, rgba(81,72,231,1) 0%, rgba(13,13,194,1) 35%, rgba(0,212,255,1) 100%);
+  animation: aparecer 500ms ease ;
+}
+
+@keyframes aparecer {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+  
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  background-color: #090b0e;
+  z-index: 10;
+  border-radius: 10px;
+  gap: 10px;
+  transition: all 500ms ease;
+}
+
+.content li {
+  display: flex;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 500ms ease;
+}
+
+.content li:hover{
+  padding-left: 50px;
+  transform: scale(1.05);
+  background: linear-gradient(90deg, rgba(81,72,231,1) 0%, rgba(13,13,194,1) 35%, rgba(0,212,255,1) 100%);
+  
+}
+
+
+#check:checked + .select{
+
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  position: absolute;
+  right: 20px;
+  cursor: pointer;
+}
+
+.fa-caret-down{
+  font-size: 25px;
+}
+
+#prices{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  gap: 30px;
+}
+
+#prices img {
+  width: 100px;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #18181b;
+  width: 300px;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  animation: card 500ms ease-in-out;
+}
+
+#card h3 {
+  text-transform: uppercase;
+}
+
+#card p {
+  text-align: center;
+  opacity: 0.8;
+  font-weight: 200;
+}
+
+@keyframes card {
+  0%{
+    opacity: 0;
+    scale: .5;
+    transform: translateX(100px);
+
+  }
+  100%{
+    opacity: 1;
+    scale: 1;
+    transform: translateX(0px);
+  }
+}
+
+footer{
+  display: flex;
+  width: var(--witdth);
+  position: absolute;
+  bottom: 0px;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+
+footer a i {
+  color: white;
+  transition: all 500ms ease;
+  font-size: 30px;
+
+}
+
+
+footer a:hover i{
+  scale: 1.5;
+  background: var(--borde-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+
+
