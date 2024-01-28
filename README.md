@@ -1,3 +1,7 @@
 ## Exercise of menu list
 
-# pratic: JavaScript , CSS, HTML , DOM
+# Pratic: 
+- JavaScript
+- CSS 
+- HTML
+- DOM
