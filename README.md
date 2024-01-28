@@ -1,7 +1,9 @@
-## Exercise of menu list
+# Exercise of menu list
 
-# Practice: 
+## Practice: 
 - JavaScript
 - CSS 
 - HTML
 - DOM
+
+link: https://menu-food-flame.vercel.app/
